@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Complete card jQuery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+     body{
+         background: #EEE;
+         color: #fff;
+     }
+
+    .container{
+        background: #fff;
+        padding: 12px;
+        margin: 12px;
+        /* height: 100%; */
+    }
+
+    #shirt{
+        width: 200px;
+    }
+
+    .item{
+        width: 200px;
+        background: #000;
+        padding: 8px;
+        float: left;
+        margin: 4px;
+    }
+
+
+    .item .name{
+        font-size:24px;
+    }
+
+    .item .price{
+        margin-top: 3px;
+        margin-bottom: 4px;
+        padding: 10px;
+    }
+
+    .moreInfo{
+        display:none;
+    }
+
+    
+
+
+    </style>
+</head>
+<body>
+    <!-- admin panel -->
+
+    <div class="admin-container">
+        <input id="input-create-item" type="text">
+        <button id="create-item">Add</button>
+
+    </div>
+
+
+    <!-- card -->
+
+    <div class="container name">
+        <div class="item">
+            <div class="name">Shirt</div>
+            <img id="shirt" src="asset/shirt.jpg" alt="shirt">
+            <div class="description">Lorem ipsum dolor sit amet.</div>
+            <div class="price">670</div>
+            <button class="itemAdd">Add to Cart</button>
+            <button class="itemRemove">Remove</button>
+            <br>
+            <a class="more" href="#">More Info</a>
+            <div class="moreInfo">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, perspiciatis.
+            </div>
+
+        </div>
+      <br style="clear: left;">
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
